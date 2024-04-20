@@ -26,7 +26,7 @@ const Home = () => {
             className='h1'
           >
             IB
-            <span className='text-accent'>asterisk</span>
+            <span className='text-accent'>asterisk</span>.
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -36,7 +36,7 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-3 xl:mb-6 text-justify font-bold'
           >
-            Volám sa Ivan Baroňák a zaujímam sa o informačné technológie.
+            Ahoj, som Ivan Baroňák,
           </motion.p>
 
           <motion.p
@@ -46,11 +46,11 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-justify'
           >
-            Najradšej mám Linux a Windows. Mám skúsenosti aj s Raspberry PI, NAS, serverovými službami ( hlavne na OpenSource platformách ) a konfiguráciou VPN tunelov.
+           človek závislý na káve, Linuxe a Windowse.<span className='block'>Rád sa venujem aj tvorbe webstránok.</span>O, a mám rád kávu. A Linux.
           </motion.p>
           
           {/* btn */}
-          <div className='flex justify-center xl:hidden relative'>
+          {/* <div className='flex justify-center xl:hidden relative'>
             <ProjectsBtn />
           </div>
           <motion.div
@@ -61,7 +61,7 @@ const Home = () => {
             className='hidden xl:flex'
           >
             <ProjectsBtn />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
       {/* image */}

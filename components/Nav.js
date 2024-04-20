@@ -17,16 +17,16 @@ import { GiTeamIdea } from "react-icons/gi";
 // nav data
 export const navData = [
   { name: 'domov', path: '/', icon: <HiHome /> },
-  { name: 'omne', path: '/about', icon: <HiUser /> },
-  { name: 'tutorials', path: '/tutorials', icon: <FaBookReader /> },
-  { name: 'work', path: '/work', icon: <MdDesignServices />},
+  { name: 'o mne', path: '/about', icon: <HiUser /> },
+  { name: 'návody', path: '/tutorials', icon: <FaBookReader /> },
+  // { name: 'portfólio', path: '/work', icon: <MdDesignServices />},
   {
     name: 'spolupráce',
     path: '/partners',
     icon: <GiTeamIdea />,
   },
   {
-    name: 'contact',
+    name: 'kontakt',
     path: '/contact',
     icon: <HiEnvelope />,
   },
