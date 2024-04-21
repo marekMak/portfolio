@@ -9,10 +9,12 @@ import { fadeIn } from '../../variants';
 
 const Services = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center'>
-      <Circles />
-      <div className='container mx-auto'>
-        <div className='flex flex-wrap justify-center w-full  gap-x-8'>
+    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <Circles />
+
+       <div className='container mx-auto h-full flex flex-col items-center  gap-x-6'>
+        {/* text */}
+        <div className='flex-1 flex flex-col justify-center'>
           <motion.div
             variants={fadeIn('down', 0.3)}
             initial='hidden'
