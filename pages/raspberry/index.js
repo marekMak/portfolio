@@ -8,9 +8,9 @@ import {
   RxArrowTopRight,
 } from 'react-icons/rx';
 
-  export const getServerSideProps = async () =>{
+  export const getStaticProps = async () =>{
 
-    const res = await fetch('https://ibasterisk.sk/wp-json/wp/v2/posts?categories=17&per_page=100');
+    const res = await fetch('https://baro.ibasterisk.sk/wp-json/wp/v2/posts?categories=17&per_page=100');
     const data = await res.json();
 
     if(data){
