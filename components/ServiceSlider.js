@@ -64,7 +64,7 @@ const ServiceSlider = () => {
     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-fit'>
   
   {serviceData.map((item,index) =>
-          <a href={`./${item.title.toLowerCase()}`} className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex flex-1 sm:flex-col  group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+          <a href={`./${item.title.toLowerCase()}`} className='bg-[rgba(65,47,123,0.15)] z-50 h-max rounded-lg px-6 py-8 flex flex-1 sm:flex-col  group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
           {/* icon */}
           <div className='text-4xl text-accent mb-4'>{item.icon}</div>
           {/* title & desc */}
