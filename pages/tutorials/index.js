@@ -15,7 +15,7 @@ const Services = () => {
     
       <div className='container mx-auto h-full w-full flex flex-col items-center  gap-x-6'>
         {/* text */}
-        <div className='flex-1 flex flex-col justify-center'>
+        <div className='flex-1 flex flex-col justify-center z-50'>
           <motion.div
             variants={fadeIn('down', 0.3)}
             initial='hidden'
