@@ -10,7 +10,7 @@ import {
 
 
   export const getServerSideProps = async (context) => {
-    const res = await fetch(`https://ibasterisk.sk/wp-json/wp/v2/posts/${context.params.id}/`);
+    const res = await fetch(`https://ibasterisk.sk/wp-json/wp/v2/posts/${context.params.id}/`,{ next: { revalidate:2 } });
     const data = await res.json();
     return {
         props: {data}
