@@ -16,7 +16,8 @@ import {
     if(data){
       return{
         props:{data}
-      }
+      },
+        revalidate: 10,
     }
 
   }
