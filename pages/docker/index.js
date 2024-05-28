@@ -10,14 +10,13 @@ import {
 
   export const getStaticProps = async () =>{
 
-    const res = await fetch('https://baro.ibasterisk.sk/wp-json/wp/v2/posts?categories=40&per_page=100');
+    const res = await fetch('https://baro.ibasterisk.sk/wp-json/wp/v2/posts?categories=40&per_page=100',{ next: { revalidate: 10 } });
     const data = await res.json();
 
     if(data){
       return{
         props:{data}
-      },
-        revalidate: 10,
+      }
     }
 
   }
