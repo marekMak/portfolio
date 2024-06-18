@@ -19,7 +19,7 @@ import{
 
 import { SiCisco } from "react-icons/si";
 
-import { TbWorldWww } from "react-icons/tb";
+import { TbWorldWww, TbAirTrafficControl } from "react-icons/tb";
 
 // service data
 export const serviceData = [
@@ -54,6 +54,10 @@ export const serviceData = [
   {
     icon: <FaPython />,
     title: 'Python',
+  },
+  {
+    icon: <TbAirTrafficControl />,
+    title: 'Zabbix',
   },
 
 
