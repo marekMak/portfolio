@@ -18,7 +18,7 @@ import{
   FaSistrix
 } from 'react-icons/fa';
 
-import { SiCisco } from "react-icons/si";
+import { SiCisco, SiVirtualbox } from "react-icons/si";
 
 import { TbWorldWww } from "react-icons/tb";
 
@@ -59,6 +59,10 @@ export const serviceData = [
   {
     icon: <FaSistrix />,
     title: 'Zabbix',
+  },
+  {
+    icon: <SiVirtualbox />,
+    title: 'Virtualizácia',
   },
 
 
