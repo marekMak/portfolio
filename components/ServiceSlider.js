@@ -62,7 +62,7 @@ export const serviceData = [
   },
   {
     icon: <SiVirtualbox />,
-    title: 'Virtualizácia',
+    title: 'Virtualizacia',
   },
 
 
