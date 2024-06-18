@@ -14,12 +14,13 @@ import{
   FaRaspberryPi,
   FaAsterisk,
   FaDocker,
-  FaPython
+  FaPython,
+  FaSistrix
 } from 'react-icons/fa';
 
 import { SiCisco } from "react-icons/si";
 
-import { TbWorldWww, TbAirTrafficControl } from "react-icons/tb";
+import { TbWorldWww } from "react-icons/tb";
 
 // service data
 export const serviceData = [
@@ -56,7 +57,7 @@ export const serviceData = [
     title: 'Python',
   },
   {
-    icon: <TbAirTrafficControl />,
+    icon: <FaSistrix />,
     title: 'Zabbix',
   },
 
