@@ -119,7 +119,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="w-full h-screen bg-primary/30 py-32 text-center xl:text-left">
+    <div className="w-full h-screen bg-primary/30 flex flex-col justify-center align-center text-center xl:text-left">
       <Circles />
 
       <div className="container mx-auto h-full flex flex-col items-center  gap-x-6">
