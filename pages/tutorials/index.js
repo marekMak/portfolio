@@ -9,7 +9,7 @@ import { fadeIn } from '../../variants';
 
 const Services = () => {
   return (
-    <div className='h-min-screen bg-primary/30 py-32 text-center xl:text-left'>
+    <div className='h-min-screen w-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles />
 
     
