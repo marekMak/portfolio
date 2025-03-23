@@ -37,7 +37,7 @@ import {
           exit='hidden'
           className='flex items-center justify-center max-w-[100vw]'>
           
-          <div dangerouslySetInnerHTML={{__html: data.content.rendered}} className='px-10 w-2/3'></div>
+          <div dangerouslySetInnerHTML={{__html: data.content.rendered}} className='px-10 w-2/3 post-content'></div>
           </motion.div>
       </div>   
     );
