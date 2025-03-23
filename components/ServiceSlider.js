@@ -76,7 +76,7 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => (
         <a
           href={`./${item.title.toLowerCase()}`}
-          className="bg-[rgba(65,47,123,0.15)] z-50 h-max rounded-lg px-6 py-8 flex flex-1 sm:flex-col  group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300"
+          className="bg-[rgba(65,47,123,0.15)] z-50 h-max rounded-lg px-4 py-8 flex flex-1 sm:flex-col  group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300"
         >
           {/* icon */}
           <div className="text-2xl text-accent mb-4 mr-2">{item.icon}</div>
