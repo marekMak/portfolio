@@ -26,7 +26,7 @@ import {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h1'
+            className='h1 mt-8'
           >
             <span  dangerouslySetInnerHTML={{__html: data.title.rendered}}></span><span className='text-accent'>.</span>
           </motion.h1>
@@ -37,7 +37,7 @@ import {
           exit='hidden'
           className='flex items-center justify-center max-w-[100vw]'>
           
-          <div dangerouslySetInnerHTML={{__html: data.content.rendered}} className='px-10 w-2/3 post-content'></div>
+          <div dangerouslySetInnerHTML={{__html: data.content.rendered}} className='px-10 w-full lg:w-2/3 post-content'></div>
           </motion.div>
       </div>   
     );
