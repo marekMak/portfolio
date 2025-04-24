@@ -5,19 +5,23 @@ export const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/thumb1.png',
+          url:'https://ladovemedvede.sk/'
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/thumb2.png',
+          url:'https://lifegym.sk/'
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/thumb3.png',
+          url:'https://diversocafe.sk/'
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/thumb4.png',
+          url:'https://vintagedistrict.sk/'
         },
       ],
     },
@@ -56,7 +60,7 @@ const WorkSlider = () => {
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image, index) => {
                 return (
-                  <a href="https://www.nhl.cz"
+                  <a href={image.url}
                     className='relative rounded-lg overflow-hidden flex items-center justify-center group'
                     key={index}
                   >
