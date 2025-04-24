@@ -56,7 +56,6 @@ export const aboutData = [
     title: "skúsenosti",
     info: [
       { title: "IKT Technician - NIVaM", stage: "2024 - " },
-      { title: "Technical export - Alcasys", stage: "2023" },
       { title: "IT specialyst - Asseco Solutions", stage: "2022 - 2023" },
       { title: "IT specialyst - Falck", stage: "2020 - 2022" },
     ],
