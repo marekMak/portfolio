@@ -93,15 +93,7 @@ const About = () => {
           </motion.h2>
 
           {/* Counter */}
-          <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          >
-            <CountUp start={0} end={5} duration={3} />
-          </motion.div>
+         
         </div>
 
         {/* Info Section */}
