@@ -6,11 +6,6 @@ export const testimonialSlider = [
     position: 'asterisk specialist',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'akonapc.sk',
-    position: 'odborná spolupráca',
-  },
-  {
     image: '/netvel.png',
     name: 'netvel.sk',
     position: 'partnership',
@@ -23,11 +18,6 @@ export const testimonialSlider = [
   {
     image: '/secorama.png',
     name: 'secorama.sk',
-    position: 'partnership',
-  },
-  {
-    image: '/hrajka.png',
-    name: 'hrajka.sk',
     position: 'partnership',
   },
   {
