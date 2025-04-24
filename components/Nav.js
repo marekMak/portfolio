@@ -19,7 +19,7 @@ export const navData = [
   { name: "domov", path: "/", icon: <HiHome /> },
   { name: "o mne", path: "/about", icon: <HiUser /> },
   { name: "návody", path: "/tutorials", icon: <FaBookReader /> },
-  // { name: 'portfólio', path: '/work', icon: <MdDesignServices />},
+  { name: 'portfólio', path: '/portfolio', icon: <MdDesignServices />},
   {
     name: "spolupráce",
     path: "/partners",
