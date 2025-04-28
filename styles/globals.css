@@ -61,6 +61,17 @@
   max-width:fit-content;
 }
 
+.wp-block-preformatted{
+   background-color: #fff3;
+  padding: 0.25rem 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+  max-width:fit-content;
+}
+
 .post-content > * {
   margin-bottom: 0.5rem !important; /* približne gap-8 */
 }
