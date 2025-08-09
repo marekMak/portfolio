@@ -11,8 +11,8 @@ export const testimonialSlider = [
     position: 'partnership',
   },
   {
-    image: '/vintage.jpg',
-    name: 'vintagedistrict.sk',
+    image: '/hypnocesta.png',
+    name: 'hypnocesta.eu',
     position: 'partnership',
   },
   {
