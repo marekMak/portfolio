@@ -72,6 +72,10 @@
   max-width:fit-content;
 }
 
+.post-content{
+  max-width:100vw;
+}
+
 .post-content > * {
   margin-bottom: 0.5rem !important; /* približne gap-8 */
 }
