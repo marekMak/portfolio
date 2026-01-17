@@ -1,0 +1,37 @@
+import nodemailer from "nodemailer";
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method not allowed" });
+  }
+
+  const { name, email, message } = req.body;
+
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS,
+    },
+  });
+
+  try {
+    await transporter.sendMail({
+      from: `"Kontakt formulár" <${process.env.MAIL_USER}>`,
+      to: process.env.MAIL_USER,
+      subject: `Nová správa od ${name}`,
+      html: `
+        <p><strong>Meno:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Správa:</strong></p>
+        <p>${message}</p>
+      `,
+    });
+
+    return res.status(200).json({ success: true });
+  } catch (error) {
+    return res.status(500).json({ success: false });
+  }
+}
