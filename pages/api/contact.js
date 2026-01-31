@@ -8,9 +8,9 @@ export default async function handler(req, res) {
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
+    host: process.env.MAIL_HOST,
+    port: Number(process.env.MAIL_PORT),
+    secure: true,
     auth: {
       user: process.env.MAIL_USER,
       pass: process.env.MAIL_PASS,
@@ -20,7 +20,8 @@ export default async function handler(req, res) {
   try {
     await transporter.sendMail({
       from: `"Kontakt formulár" <${process.env.MAIL_USER}>`,
-      to: process.env.MAIL_USER,
+      to: process.env.MAIL_TO,
+      replyTo: email,
       subject: `Nová správa od ${name}`,
       html: `
         <p><strong>Meno:</strong> ${name}</p>
@@ -32,6 +33,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ success: true });
   } catch (error) {
-    return res.status(500).json({ success: false });
+    console.error("MAIL ERROR:", error);
+    return res.status(500).json({ success: false, error: "Email send failed" });
   }
 }
