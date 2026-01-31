@@ -18,6 +18,10 @@ export default async function handler(req, res) {
   });
 
   try {
+    // ✅ TEST pripojenia + login
+    await transporter.verify();
+
+    // potom reálne odoslanie
     await transporter.sendMail({
       from: `"Kontakt formulár" <${process.env.MAIL_USER}>`,
       to: process.env.MAIL_TO,
@@ -34,6 +38,9 @@ export default async function handler(req, res) {
     return res.status(200).json({ success: true });
   } catch (error) {
     console.error("MAIL ERROR:", error);
-    return res.status(500).json({ success: false, error: "Email send failed" });
+    return res.status(500).json({
+      success: false,
+      error: String(error?.message || error),
+    });
   }
 }
