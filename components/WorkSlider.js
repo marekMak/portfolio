@@ -18,11 +18,6 @@ export const workSlider = {
           path: '/thumb3.png',
           url:'https://diversocafe.sk/'
         },
-        {
-          title: 'title',
-          path: '/thumb4.png',
-          url:'https://vintagedistrict.sk/'
-        },
       ],
     },
   ],
